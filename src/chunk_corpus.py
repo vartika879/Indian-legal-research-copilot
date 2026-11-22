@@ -1,5 +1,5 @@
 ﻿"""
-chunk_corpus.py  (v2)
+
 
 Kaam: data/processed/civil_*.jsonl ke judgments ko chhote chunks me todna
       aur data/processed/chunks.jsonl me save karna.
@@ -17,7 +17,7 @@ import json
 import os
 import random
 import re
-from collections import Counter
+from collections import Counter, defaultdict
 
 FILES = sorted(glob.glob("data/processed/civil_*.jsonl"))
 OUT = "data/processed/chunks.jsonl"
@@ -181,6 +181,9 @@ def make_chunks(paras):
 # STEP 4: main loop: har judgment -> repair -> split -> chunks -> file
 # ======================================================================
 n_docs = n_chunks = n_dropped = plaintiffno = 0
+seen_files = set()              # ek hi PDF do baar aaye to skip karo
+dup_docs = []                   # skip hue duplicate docs (report ke liye)
+case_files = defaultdict(list)  # case_id -> kaunsi PDF files isse judi hain
 methods = Counter()
 sec_counts = Counter()
 lens = []
@@ -190,6 +193,11 @@ with open(OUT, "w", encoding="utf-8") as fout:
     for fp in FILES:
         for line in open(fp, encoding="utf-8"):
             r = json.loads(line)
+            if r["file"] in seen_files:
+                dup_docs.append((r["file"], r["title"]))
+                continue
+            seen_files.add(r["file"])
+            case_files[r["case_id"]].append(r["file"])
             n_docs += 1
             text = repair(r["text"])
             head, body, method = split_sections(text)
@@ -211,7 +219,8 @@ with open(OUT, "w", encoding="utf-8") as fout:
                         continue
                     k += 1
                     rec = {
-                        "chunk_id": f"{r['case_id'] or r['file']}::{k:04d}",
+                        # FIX: PDF ka filename unique hota hai, case_id nahi (do judgments ka case_id same ho sakta hai)
+                        "chunk_id": f"{os.path.splitext(r['file'])[0]}::{k:04d}",
                         "case_id": r["case_id"], "file": r["file"], "year": r["year"],
                         "title": r["title"], "citation": r["citation"],
                         "decision_date": r["decision_date"],
@@ -239,6 +248,13 @@ print("chunk chars min/median/p95/max:", lens[0], lens[len(lens) // 2],
 print("ligature repairs:", sum(repaired.values()), "| top:", repaired.most_common(10))
 print("'plaintiffno' abhi bhi kitni baar:", plaintiffno)
 print("saved:", OUT, round(os.path.getsize(OUT) / 1e6, 1), "MB")
+
+# ---- duplicate check (citation verifier ke liye zaroori) ----
+print("\nduplicate PDF files skipped:", len(dup_docs), dup_docs[:3])
+shared = {cid: fs for cid, fs in case_files.items() if len(fs) > 1}
+print("case_id jo ek se zyada PDF me hai:", len(shared))
+for cid, fs in list(shared.items())[:5]:
+    print("  ", cid, "->", fs)
 
 print("\n===== judge_line split: 3 examples (headnote ka end | judgment ka start) =====")
 for title, h, b in random.sample(judge_examples, min(3, len(judge_examples))):

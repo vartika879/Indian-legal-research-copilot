@@ -1,0 +1,9 @@
+
+boto3
+pandas
+pyarrow
+tqdm
+pyyaml
+pymupdf
+sentence-transformers
+chromadb
