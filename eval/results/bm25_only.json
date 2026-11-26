@@ -1,0 +1,239 @@
+{
+  "system": "bm25_only",
+  "date": "2026-11-26",
+  "n_scored": 10,
+  "n_abstain": 0,
+  "golden_status": {
+    "unvalidated": 10
+  },
+  "summary": {
+    "hit@1": 0.5,
+    "hit@3": 0.8,
+    "hit@5": 1,
+    "hit@10": 1,
+    "recall@10": 0.6733333333333333,
+    "mrr": 0.6833333333333333,
+    "distinct@5": 4.1
+  },
+  "ci95": {
+    "hit@5": [
+      1.0,
+      1.0
+    ],
+    "recall@10": [
+      0.5616666666666666,
+      0.7916666666666667
+    ],
+    "mrr": [
+      0.4833333333333333,
+      0.8833333333333334
+    ]
+  },
+  "abstain_top1_sims": [],
+  "per_question": [
+    {
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.75,
+      "rr": 1.0,
+      "first_rank": 1,
+      "distinct@5": 4,
+      "missed@10": [
+        "2021_10_287_308_EN.pdf",
+        "2023_3_802_819_EN.pdf"
+      ],
+      "id": "Q02",
+      "n_relevant": 8,
+      "top1_sim": 41.02217102050781,
+      "missed_titles": [
+        "SUGHAR SINGH versus HARI SINGH (DEAD) THROUGH LRS. & ORS.",
+        "GADDIPATI DIVIJA & ANR. versus PATHURI SAMRAJYAM & ORS."
+      ]
+    },
+    {
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.6666666666666666,
+      "rr": 1.0,
+      "first_rank": 1,
+      "distinct@5": 4,
+      "missed@10": [
+        "2022_18_199_220_EN.pdf",
+        "2023_3_244_281_EN.pdf"
+      ],
+      "id": "Q03",
+      "n_relevant": 6,
+      "top1_sim": 33.500831604003906,
+      "missed_titles": [
+        "P. DAIVASIGAMANI versus S. SAMBANDAN",
+        "C. HARIDASAN versus ANAPPATH PARAKKATTU VASUDEVA KURUP & OTHERS"
+      ]
+    },
+    {
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.75,
+      "rr": 0.5,
+      "first_rank": 2,
+      "distinct@5": 4,
+      "missed@10": [
+        "2024_11_1257_1268_EN.pdf"
+      ],
+      "id": "Q04",
+      "n_relevant": 4,
+      "top1_sim": 22.86142921447754,
+      "missed_titles": [
+        "THE STATE OF HARYANA & ANR. versus AMIN LAL (SINCE DECEASED) THROUGH HIS LRS & ORS."
+      ]
+    },
+    {
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.8333333333333334,
+      "rr": 0.25,
+      "first_rank": 4,
+      "distinct@5": 4,
+      "missed@10": [
+        "2019_14_859_927_EN.pdf"
+      ],
+      "id": "Q05",
+      "n_relevant": 6,
+      "top1_sim": 25.152191162109375,
+      "missed_titles": [
+        "PRABHAKAR GONES PRABHU NAVELKAR (DEAD) THROUGH LRS & ORS. versus SARADCHANDRA SURIA PRABHU NAVELKAR (DEAD) THROUGH LRS. & ORS."
+      ]
+    },
+    {
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.3333333333333333,
+      "rr": 0.3333333333333333,
+      "first_rank": 3,
+      "distinct@5": 5,
+      "missed@10": [
+        "2015_1_1108_1115_EN.pdf",
+        "2017_5_294_313_EN.pdf",
+        "2018_13_1242_1252_EN.pdf",
+        "2025_5_94_127_EN.pdf"
+      ],
+      "id": "Q06",
+      "n_relevant": 6,
+      "top1_sim": 32.65522766113281,
+      "missed_titles": [
+        "P.V. GURU RAJ REDDY REP. BY GPA LAXMI NARAYAN  REDDY & ANR. versus P. NEERADHA REDDY & ORS. ETC.",
+        "MADANURI SRI RAMA CHANDRA MURTHY versus SYED JALAL",
+        "URVASHIBEN & ANR. versus KRISHNAKANT MANUPRASAD TRIVEDI",
+        "THE CORRESPONDENCE, RBANMS EDUCATIONAL INSTITUTION versus B. GUNASHEKAR & ANOTHER"
+      ]
+    },
+    {
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.6666666666666666,
+      "rr": 1.0,
+      "first_rank": 1,
+      "distinct@5": 4,
+      "missed@10": [
+        "2023_4_493_511_EN.pdf",
+        "2025_4_1753_1770_EN.pdf"
+      ],
+      "id": "Q08",
+      "n_relevant": 6,
+      "top1_sim": 43.87568283081055,
+      "missed_titles": [
+        "KUSUM LATA SHARMA versus ARVIND SINGH",
+        "MURLIDHAR AGGARWAL (D.) THR. HIS LR. ATUL KUMAR AGGARWAL versus MAHENDRA PRATAP KAKAN (D.) THR. LRS. AND ORS."
+      ]
+    },
+    {
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.8333333333333334,
+      "rr": 1.0,
+      "first_rank": 1,
+      "distinct@5": 3,
+      "missed@10": [
+        "2019_11_913_1005_EN.pdf"
+      ],
+      "id": "Q10",
+      "n_relevant": 6,
+      "top1_sim": 44.14213943481445,
+      "missed_titles": [
+        "VITHALDAS JAGANNATH KHATRI (D) THROUGH SHAKUNTALA ALIAS SUSHMA & ORS. versus THE STATE OF MAHARASHTRA REVENUE AND FOREST DEPARTMENT & ORS."
+      ]
+    },
+    {
+      "hit@1": 0,
+      "hit@3": 0,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.5,
+      "rr": 0.25,
+      "first_rank": 4,
+      "distinct@5": 5,
+      "missed@10": [
+        "2022_17_416_450_EN.pdf",
+        "2022_18_65_84_EN.pdf"
+      ],
+      "id": "Q01",
+      "n_relevant": 4,
+      "top1_sim": 33.15672302246094,
+      "missed_titles": [
+        "SMT. KATTA SUJATHA REDDY & ANR. versus SIDDAMSETTY INFRA PROJECTS PVT. LTD.& ORS.",
+        "DESH RAJ & ORS. versus ROHTASH SINGH"
+      ]
+    },
+    {
+      "hit@1": 0,
+      "hit@3": 1,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 0.4,
+      "rr": 0.5,
+      "first_rank": 2,
+      "distinct@5": 4,
+      "missed@10": [
+        "2018_3_422_434_EN.pdf",
+        "2019_8_1058_1070_EN.pdf",
+        "2023_14_153_163_EN.pdf"
+      ],
+      "id": "Q07",
+      "n_relevant": 5,
+      "top1_sim": 31.268150329589844,
+      "missed_titles": [
+        "CHHOTANBEN AND ANR. versus KIRITBHAI JALKRUSHNABHAI THAKKAR AND ORS.",
+        "MADHAV PRASAD AGGARWAL & ANR. versus AXIS BANK LTD. & ANR.",
+        "KUM. GEETHA, D/O LATE KRISHNA & ORS. versus NANJUNDASWAMY & ORS."
+      ]
+    },
+    {
+      "hit@1": 1,
+      "hit@3": 1,
+      "hit@5": 1,
+      "hit@10": 1,
+      "recall@10": 1.0,
+      "rr": 1.0,
+      "first_rank": 1,
+      "distinct@5": 4,
+      "missed@10": [],
+      "id": "Q09",
+      "n_relevant": 6,
+      "top1_sim": 31.47405242919922,
+      "missed_titles": []
+    }
+  ]
+}
