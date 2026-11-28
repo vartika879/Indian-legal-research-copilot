@@ -1,18 +1,18 @@
 {
   "system": "bm25_only",
-  "date": "2026-11-26",
+  "date": "2026-11-28",
   "n_scored": 10,
   "n_abstain": 0,
   "golden_status": {
     "unvalidated": 10
   },
   "summary": {
-    "hit@1": 0.5,
+    "hit@1": 0.6,
     "hit@3": 0.8,
     "hit@5": 1,
     "hit@10": 1,
-    "recall@10": 0.6733333333333333,
-    "mrr": 0.6833333333333333,
+    "recall@10": 0.7007936507936507,
+    "mrr": 0.75,
     "distinct@5": 4.1
   },
   "ci95": {
@@ -21,12 +21,12 @@
       1.0
     ],
     "recall@10": [
-      0.5616666666666666,
-      0.7916666666666667
+      0.6190476190476191,
+      0.7773809523809524
     ],
     "mrr": [
-      0.4833333333333333,
-      0.8833333333333334
+      0.55,
+      0.95
     ]
   },
   "abstain_top1_sims": [],
@@ -57,7 +57,7 @@
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 0.6666666666666666,
+      "recall@10": 0.7142857142857143,
       "rr": 1.0,
       "first_rank": 1,
       "distinct@5": 4,
@@ -66,7 +66,7 @@
         "2023_3_244_281_EN.pdf"
       ],
       "id": "Q03",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 33.500831604003906,
       "missed_titles": [
         "P. DAIVASIGAMANI versus S. SAMBANDAN",
@@ -112,13 +112,13 @@
       ]
     },
     {
-      "hit@1": 0,
+      "hit@1": 1,
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 0.3333333333333333,
-      "rr": 0.3333333333333333,
-      "first_rank": 3,
+      "recall@10": 0.5555555555555556,
+      "rr": 1.0,
+      "first_rank": 1,
       "distinct@5": 5,
       "missed@10": [
         "2015_1_1108_1115_EN.pdf",
@@ -127,7 +127,7 @@
         "2025_5_94_127_EN.pdf"
       ],
       "id": "Q06",
-      "n_relevant": 6,
+      "n_relevant": 9,
       "top1_sim": 32.65522766113281,
       "missed_titles": [
         "P.V. GURU RAJ REDDY REP. BY GPA LAXMI NARAYAN  REDDY & ANR. versus P. NEERADHA REDDY & ORS. ETC.",
@@ -141,7 +141,7 @@
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 0.6666666666666666,
+      "recall@10": 0.7142857142857143,
       "rr": 1.0,
       "first_rank": 1,
       "distinct@5": 4,
@@ -150,7 +150,7 @@
         "2025_4_1753_1770_EN.pdf"
       ],
       "id": "Q08",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 43.87568283081055,
       "missed_titles": [
         "KUSUM LATA SHARMA versus ARVIND SINGH",
@@ -202,7 +202,7 @@
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 0.4,
+      "recall@10": 0.5,
       "rr": 0.5,
       "first_rank": 2,
       "distinct@5": 4,
@@ -212,7 +212,7 @@
         "2023_14_153_163_EN.pdf"
       ],
       "id": "Q07",
-      "n_relevant": 5,
+      "n_relevant": 6,
       "top1_sim": 31.268150329589844,
       "missed_titles": [
         "CHHOTANBEN AND ANR. versus KIRITBHAI JALKRUSHNABHAI THAKKAR AND ORS.",
@@ -225,15 +225,19 @@
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 1.0,
+      "recall@10": 0.8571428571428571,
       "rr": 1.0,
       "first_rank": 1,
       "distinct@5": 4,
-      "missed@10": [],
+      "missed@10": [
+        "2020_1_967_975_EN.pdf"
+      ],
       "id": "Q09",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 31.47405242919922,
-      "missed_titles": []
+      "missed_titles": [
+        "K. LUBNA & ORS. versus BEEVI & ORS."
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "system": "hybrid_rrf_dense_bm25",
-  "date": "2026-11-26",
+  "date": "2026-11-28",
   "n_scored": 10,
   "n_abstain": 0,
   "golden_status": {
@@ -11,8 +11,8 @@
     "hit@3": 0.9,
     "hit@5": 0.9,
     "hit@10": 1,
-    "recall@10": 0.8075,
-    "mrr": 0.7266666666666667,
+    "recall@10": 0.8065476190476191,
+    "mrr": 0.7433333333333333,
     "distinct@5": 4.4
   },
   "ci95": {
@@ -21,12 +21,12 @@
       1.0
     ],
     "recall@10": [
-      0.6366666666666667,
-      0.95
+      0.6291666666666667,
+      0.9523809523809523
     ],
     "mrr": [
-      0.5033333333333333,
-      0.9333333333333333
+      0.53,
+      0.95
     ]
   },
   "abstain_top1_sims": [],
@@ -61,7 +61,7 @@
       "distinct@5": 4,
       "missed@10": [],
       "id": "Q03",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 0.03252247488101534,
       "missed_titles": []
     },
@@ -101,18 +101,20 @@
       "hit@5": 1,
       "hit@10": 1,
       "recall@10": 0.6666666666666666,
-      "rr": 0.3333333333333333,
-      "first_rank": 3,
+      "rr": 0.5,
+      "first_rank": 2,
       "distinct@5": 4,
       "missed@10": [
         "2018_13_1242_1252_EN.pdf",
+        "2025_2_263_312_EN.pdf",
         "2025_5_94_127_EN.pdf"
       ],
       "id": "Q06",
-      "n_relevant": 6,
+      "n_relevant": 9,
       "top1_sim": 0.029513888888888888,
       "missed_titles": [
         "URVASHIBEN & ANR. versus KRISHNAKANT MANUPRASAD TRIVEDI",
+        "CENTRAL BANK OF INDIA & ANR.  versus SMT. PRABHA JAIN & ORS.",
         "THE CORRESPONDENCE, RBANMS EDUCATIONAL INSTITUTION versus B. GUNASHEKAR & ANOTHER"
       ]
     },
@@ -121,7 +123,7 @@
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 0.8333333333333334,
+      "recall@10": 0.8571428571428571,
       "rr": 1.0,
       "first_rank": 1,
       "distinct@5": 4,
@@ -129,7 +131,7 @@
         "2023_4_493_511_EN.pdf"
       ],
       "id": "Q08",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 0.03278688524590164,
       "missed_titles": [
         "KUSUM LATA SHARMA versus ARVIND SINGH"
@@ -176,7 +178,7 @@
       "hit@3": 0,
       "hit@5": 0,
       "hit@10": 1,
-      "recall@10": 0.2,
+      "recall@10": 0.16666666666666666,
       "rr": 0.1,
       "first_rank": 10,
       "distinct@5": 5,
@@ -184,16 +186,18 @@
         "2018_3_422_434_EN.pdf",
         "2019_8_1058_1070_EN.pdf",
         "2023_14_153_163_EN.pdf",
-        "2025_2_263_312_EN.pdf"
+        "2025_2_263_312_EN.pdf",
+        "2025_7_190_215_EN.pdf"
       ],
       "id": "Q07",
-      "n_relevant": 5,
+      "n_relevant": 6,
       "top1_sim": 0.03177805800756621,
       "missed_titles": [
         "CHHOTANBEN AND ANR. versus KIRITBHAI JALKRUSHNABHAI THAKKAR AND ORS.",
         "MADHAV PRASAD AGGARWAL & ANR. versus AXIS BANK LTD. & ANR.",
         "KUM. GEETHA, D/O LATE KRISHNA & ORS. versus NANJUNDASWAMY & ORS.",
-        "CENTRAL BANK OF INDIA & ANR.  versus SMT. PRABHA JAIN & ORS."
+        "CENTRAL BANK OF INDIA & ANR.  versus SMT. PRABHA JAIN & ORS.",
+        "VINOD INFRA DEVELOPERS LTD. versus MAHAVEER LUNIA & ORS."
       ]
     },
     {
@@ -207,7 +211,7 @@
       "distinct@5": 3,
       "missed@10": [],
       "id": "Q09",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 0.030886196246139225,
       "missed_titles": []
     }

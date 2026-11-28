@@ -1,6 +1,6 @@
 {
   "system": "naive_vector_bge_small",
-  "date": "2026-11-26",
+  "date": "2026-11-28",
   "n_scored": 10,
   "n_abstain": 0,
   "golden_status": {
@@ -11,7 +11,7 @@
     "hit@3": 0.9,
     "hit@5": 0.9,
     "hit@10": 0.9,
-    "recall@10": 0.75,
+    "recall@10": 0.726984126984127,
     "mrr": 0.9090909090909091,
     "distinct@5": 4.3
   },
@@ -21,8 +21,8 @@
       1.0
     ],
     "recall@10": [
-      0.55,
-      0.9
+      0.525,
+      0.8928571428571429
     ],
     "mrr": [
       0.7272727272727273,
@@ -63,7 +63,7 @@
       "distinct@5": 4,
       "missed@10": [],
       "id": "Q03",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 0.8853071928024292,
       "missed_titles": []
     },
@@ -110,18 +110,24 @@
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 0.8333333333333334,
+      "recall@10": 0.5555555555555556,
       "rr": 1.0,
       "first_rank": 1,
       "distinct@5": 4,
       "missed@10": [
-        "2018_13_1242_1252_EN.pdf"
+        "2017_7_557_564_EN.pdf",
+        "2018_13_1242_1252_EN.pdf",
+        "2024_12_1445_1481_EN.pdf",
+        "2025_2_263_312_EN.pdf"
       ],
       "id": "Q06",
-      "n_relevant": 6,
+      "n_relevant": 9,
       "top1_sim": 0.8680700063705444,
       "missed_titles": [
-        "URVASHIBEN & ANR. versus KRISHNAKANT MANUPRASAD TRIVEDI"
+        "SEJAL GLASS LTD. versus NAVILAN MERCHANTS PVT. LTD.",
+        "URVASHIBEN & ANR. versus KRISHNAKANT MANUPRASAD TRIVEDI",
+        "SHRI MUKUND BHAVAN TRUST AND ORS. versus SHRIMANT CHHATRAPATI UDAYAN RAJE PRATAPSINH MAHARAJ BHONSLE AND ANOTHER",
+        "CENTRAL BANK OF INDIA & ANR.  versus SMT. PRABHA JAIN & ORS."
       ]
     },
     {
@@ -129,7 +135,7 @@
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 0.8333333333333334,
+      "recall@10": 0.8571428571428571,
       "rr": 1.0,
       "first_rank": 1,
       "distinct@5": 3,
@@ -137,7 +143,7 @@
         "2016_7_807_812_EN.pdf"
       ],
       "id": "Q08",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 0.8493061065673828,
       "missed_titles": [
         "BHUPINDER SINGH BAWA versus ASHA DEVI"
@@ -191,17 +197,19 @@
         "2018_3_422_434_EN.pdf",
         "2019_8_1058_1070_EN.pdf",
         "2023_14_153_163_EN.pdf",
-        "2025_2_263_312_EN.pdf"
+        "2025_2_263_312_EN.pdf",
+        "2025_7_190_215_EN.pdf"
       ],
       "id": "Q07",
-      "n_relevant": 5,
+      "n_relevant": 6,
       "top1_sim": 0.8839424848556519,
       "missed_titles": [
         "SEJAL GLASS LTD. versus NAVILAN MERCHANTS PVT. LTD.",
         "CHHOTANBEN AND ANR. versus KIRITBHAI JALKRUSHNABHAI THAKKAR AND ORS.",
         "MADHAV PRASAD AGGARWAL & ANR. versus AXIS BANK LTD. & ANR.",
         "KUM. GEETHA, D/O LATE KRISHNA & ORS. versus NANJUNDASWAMY & ORS.",
-        "CENTRAL BANK OF INDIA & ANR.  versus SMT. PRABHA JAIN & ORS."
+        "CENTRAL BANK OF INDIA & ANR.  versus SMT. PRABHA JAIN & ORS.",
+        "VINOD INFRA DEVELOPERS LTD. versus MAHAVEER LUNIA & ORS."
       ]
     },
     {
@@ -209,7 +217,7 @@
       "hit@3": 1,
       "hit@5": 1,
       "hit@10": 1,
-      "recall@10": 0.8333333333333334,
+      "recall@10": 0.8571428571428571,
       "rr": 1.0,
       "first_rank": 1,
       "distinct@5": 4,
@@ -217,7 +225,7 @@
         "2017_7_872_893_EN.pdf"
       ],
       "id": "Q09",
-      "n_relevant": 6,
+      "n_relevant": 7,
       "top1_sim": 0.7960065007209778,
       "missed_titles": [
         "RAM MURTI DEVI versus PUSHPA DEVI AND OTHERS"
